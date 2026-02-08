@@ -2,221 +2,39 @@
 <html lang="da">
 <head>
   <meta charset="utf-8">
-  <title>Aalborg Fjord VVS – Badeværelse, service og nyinstallation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="VVS i Aalborg og omegn. Badeværelser, nyinstallation og professionel VVS-service. Klare aftaler og gennemsigtige priser.">
-
-  <style>
-    :root{
-      --bg:#0f172a;
-      --card:#111827;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
-      --line: rgba(255,255,255,.08);
-      --brand:#38bdf8;
-      --brand2:#22c55e;
-      --shadow: 0 18px 40px rgba(0,0,0,.35);
-      --radius:16px;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,Arial,sans-serif;background:radial-gradient(900px 450px at 15% 0%, rgba(56,189,248,.14), transparent 60%), var(--bg);color:var(--text);line-height:1.6}
-    a{color:var(--brand);text-decoration:none}
-    header,section,footer{max-width:1100px;margin:auto;padding:32px 20px}
-
-    /* Sticky header */
-    .topbar{
-      position: sticky; top:0; z-index:50;
-      background: rgba(15,23,42,.78);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
-    }
-    .topbarInner{
-      max-width:1100px;margin:auto;padding:14px 20px;
-      display:flex;justify-content:space-between;align-items:center;gap:12px;
-    }
-    .logo{font-weight:900;font-size:18px;letter-spacing:.2px;display:flex;align-items:center;gap:10px}
-    .mark{width:12px;height:12px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:0 0 0 6px rgba(56,189,248,.12)}
-    nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-    nav a{padding:10px 10px;border-radius:12px;color:var(--text);opacity:.9}
-    nav a:hover{background:rgba(255,255,255,.06)}
-    .btn{display:inline-block;padding:12px 16px;border-radius:12px;background:var(--brand);color:#020617;font-weight:800}
-    .btn.alt{background:#1f2937;color:var(--text);border:1px solid var(--line)}
-    .btn:hover{filter:brightness(1.03)}
-
-    /* Layout */
-    .hero{display:grid;grid-template-columns:1.2fr 0.8fr;gap:18px;align-items:start}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
-    h1{font-size:40px;line-height:1.1;margin:0 0 12px}
-    h2{margin:0 0 12px}
-    h3{margin:0 0 8px}
-    p{margin:0 0 12px;color:var(--text);opacity:.95}
-    .muted{color:var(--muted)}
-    ul{padding-left:18px;margin:10px 0 0}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .badges{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 6px}
-    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--muted);font-weight:700;font-size:13px}
-    .dot{width:8px;height:8px;border-radius:999px;background:var(--brand2);box-shadow:0 0 0 6px rgba(34,197,94,.10)}
-
-    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .kv p{margin:8px 0}
-    .krow{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
-    .krow strong{color:var(--text)}
-    footer{font-size:14px;color:var(--muted);padding-top:8px;padding-bottom:28px}
-
-    @media(max-width:900px){
-      .hero,.grid{grid-template-columns:1fr}
-      h1{font-size:32px}
-      nav a{display:none}
-      nav a.btn{display:inline-block}
-      nav a.btn.alt{display:inline-block}
-    }
-  </style>
+  <title>Aalborg Fjord VVS</title>
+  <meta name="description" content="VVS i Aalborg og omegn. Badeværelse, service og nyinstallation. Klare aftaler og gennemsigtige priser.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="topbar">
-  <div class="topbarInner">
-    <div class="logo"><span class="mark"></span> Aalborg Fjord VVS</div>
+  <div class="wrap topbarInner">
+    <a class="brand" href="index.html">
+      <!-- Skift logo.png til dit logo-filnavn -->
+      <img src="logo.png" alt="Aalborg Fjord VVS logo">
+      <span class="brandName">Aalborg Fjord VVS</span>
+    </a>
     <nav>
-      <a href="#ydelser">Ydelser</a>
-      <a href="#priser">Priser</a>
-      <a href="#kontakt">Kontakt</a>
-      <a class="btn alt" href="#kontakt">Få tilbud</a>
-      <a class="btn" href="tel:+4512345678">Ring nu</a>
+      <a class="link" href="ydelser.html">Ydelser</a>
+      <a class="link" href="priser.html">Priser</a>
+      <a class="link" href="kontakt.html">Kontakt</a>
+      <a class="btn" href="kontakt.html">Få tilbud</a>
+      <a class="btn btnPrimary" href="tel:+4512345678">Ring nu</a>
     </nav>
   </div>
 </div>
 
-<section class="hero">
-  <div class="card">
-    <h1>Badeværelser, nyinstallation og professionel VVS-service i private hjem</h1>
-
-    <div class="badges">
-      <span class="badge"><span class="dot"></span> Klare aftaler</span>
-      <span class="badge">Gennemsigtige priser</span>
-      <span class="badge">Aalborg & omegn</span>
-    </div>
-
-    <p class="muted">
-      Vi udfører VVS-arbejde i Aalborg og omegn med fokus på kvalitet, klare aftaler og gennemsigtige priser.
-      Uanset om du skal have renoveret badeværelset, udskiftet et armatur eller repareret en utæt installation,
-      får du professionelt arbejde – til aftalt tid og pris.
-    </p>
-
-    <div class="actions">
-      <a href="#kontakt" class="btn">Få tilbud</a>
-      <a href="tel:+4512345678" class="btn alt">Ring nu</a>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2>Hurtig kontakt</h2>
-    <div class="kv">
-      <div class="krow"><span>Telefon</span><strong><a href="tel:+4512345678">12 34 56 78</a></strong></div>
-      <div class="krow"><span>Email</span><strong><a href="mailto:kontakt@ditfirma.dk">kontakt@ditfirma.dk</a></strong></div>
-      <div class="krow"><span>Område</span><strong>Aalborg & omegn</strong></div>
-    </div>
-    <p class="muted" style="margin-top:12px;">
-      Skriv kort hvad opgaven er – så vender vi hurtigt tilbage.
-    </p>
-  </div>
-</section>
-
-<section>
-  <div class="grid">
+<header class="hero">
+  <div class="wrap heroGrid">
     <div class="card">
-      <h3>Tryghed i processen</h3>
-      <p class="muted">Du får altid besked, hvis der opstår ekstraarbejde. Vi dokumenterer arbejdet og holder dig opdateret.</p>
-    </div>
-    <div class="card">
-      <h3>Pænt arbejde – hver gang</h3>
-      <p class="muted">Vi rydder op efter os og gør os umage med finish. Det skal være ordentligt – også bagefter.</p>
-    </div>
-    <div class="card">
-      <h3>Privat bolig</h3>
-      <p class="muted">Vi hjælper især husejere og lejligheder med bad, køkken, varme og service.</p>
-    </div>
-  </div>
-</section>
-
-<section id="ydelser">
-  <h2>Ydelser</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Badeværelser & renovering</h3>
-      <p class="muted">Komplette badeværelser og del-renoveringer med korrekt rørføring og trygt forløb.</p>
-      <ul>
-        <li>Toilet, armatur og sanitet</li>
-        <li>Bruseløsninger</li>
-        <li>PEX og fordelerrør</li>
-        <li>Del- og totalrenovering</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Service & udskiftning</h3>
-      <p class="muted">Effektiv VVS-service i private hjem – uden unødigt bøvl.</p>
-      <ul>
-        <li>Armatur (køkken/bad)</li>
-        <li>Toilet der løber</li>
-        <li>Utætheder og fejlsøgning</li>
-        <li>Radiatorventiler/termostater</li>
-      </ul>
-      <p class="muted"><em>Ved fejlsøgning uden synlig årsag afregnes timebaseret.</em></p>
-    </div>
-
-    <div class="card">
-      <h3>Nyinstallation & rørarbejde</h3>
-      <p class="muted">Planlagt VVS-arbejde ved nybyg og ombygning.</p>
-      <ul>
-        <li>Nye vand- og varmeinstallationer</li>
-        <li>Teknikrum og bryggers</li>
-        <li>Køkken- og badinstallationer</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section id="priser">
-  <h2>Priser & afregning</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Timepris</h3>
-      <p>Fra <strong>550 kr./time</strong> ekskl. moms</p>
-      <p class="muted">Timeafregning ved service og fejlfinding.</p>
-    </div>
-    <div class="card">
-      <h3>Tillæg & gebyrer</h3>
-      <p class="muted">
-        Servicevogn: <strong>130 kr.</strong><br>
-        Miljøgebyr: <strong>110 kr.</strong><br>
-        Kvalitetssikring: <strong>50 kr.</strong>
-      </p>
-    </div>
-    <div class="card">
-      <h3>Tilbud</h3>
-      <p class="muted">Større opgaver udføres på fast tilbud eller overslag – så du kender prisen.</p>
-    </div>
-  </div>
-  <p class="muted"><em>Du får altid besked, hvis der opstår ekstraarbejde.</em></p>
-</section>
-
-<section id="kontakt">
-  <h2>Kontakt</h2>
-  <div class="card">
-    <p class="muted">Kontakt os for tilbud, overslag eller en uforpligtende snak om din opgave.</p>
-    <div class="kv">
-      <div class="krow"><span>Telefon</span><strong><a href="tel:+4512345678">12 34 56 78</a></strong></div>
-      <div class="krow"><span>Email</span><strong><a href="mailto:kontakt@ditfirma.dk">kontakt@ditfirma.dk</a></strong></div>
-      <div class="krow"><span>Område</span><strong>Aalborg & omegn</strong></div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © 2026 Aalborg Fjord VVS – Alle rettigheder forbeholdes
-</footer>
-
-</body>
-</html>
+      <h1>VVS-arbejde i Aalborg og omegn – med klare aftaler</h1>
+      <div class="badges">
+        <span class="badge">Badeværelse</span>
+        <span class="badge">Service</span>
+        <span class="badge">Nyinstallation</span>
+      </div>
+      <p>
+        Vi hjælper private hjem med alt fra små reparationer til komplette badeværelser.
+        Du får professionelt arbejde,
